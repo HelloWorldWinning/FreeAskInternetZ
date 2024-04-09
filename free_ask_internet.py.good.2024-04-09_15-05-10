@@ -180,8 +180,8 @@ def ask_internet(query: str,  debug=False):
     if True:
         yield "---"
         yield "\n"
-      # yield "参考资料:\n"
-        yield "References:\n"
+        yield "参考资料:\n"
+      # yield "References:\n"
         count = 1
         for url_content in content_list:
             url = url_content.get('url')
