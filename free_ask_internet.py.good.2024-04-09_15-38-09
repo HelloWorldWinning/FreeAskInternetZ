@@ -109,7 +109,7 @@ def gen_prompt(question, content_list, context_length_limit=11000, debug=False):
     if len(ref_content) > 0:
 
         prompts = '''
-- Your objective as an AI Q&A assistant is to craft responses that are clear, concise, and easy to read and understand.Your responses must stay within a limit of 1200 characters or 150 words, whichever is reached first. Structure your answers in logical paragraphs, with information presented in well-organized paragraphs. Focus on clarity and conciseness, ensuring each response directly addresses the user's questions. Avoid unnecessary jargon or complex language to maintain accessibility. If the query lacks sufficient details for a full/comprehensive answer, use 'Additional context needed:' to specify the extra information required. Craft your responses to be coherent and structured and logically ordered, mirroring the language and style of the incoming question. Reference the context content set below for your reference:
+- Your objective as an AI Q&A assistant is to craft responses that are clear, concise, and easy to read and understand. Structure your answers in logical paragraphs, with information presented in well-organized paragraphs. Focus on clarity and conciseness, ensuring each response directly addresses the user's questions. Avoid unnecessary jargon or complex language to maintain accessibility. If the query lacks sufficient details for a full/comprehensive answer, use 'Additional context needed:' to specify the extra information required. Craft your responses to be coherent and structured and logically ordered, mirroring the language and style of the incoming question. Reference the context content set below for your reference:
 
         ''' + "\n\n" + "```"
         ref_index = 1
