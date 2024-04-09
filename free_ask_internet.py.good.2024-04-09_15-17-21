@@ -123,6 +123,7 @@ def gen_prompt(question, content_list, context_length_limit=11000, debug=False):
             prompts = prompts[0:limit_len]
         prompts = prompts + '''
 ---TEXT split---
+Below is the most relevant part in the TEXT above the `---TEXT split---`,
 Questions are below: 
 
 ''' + question

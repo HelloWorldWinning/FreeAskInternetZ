@@ -1,7 +1,6 @@
 services:
   backend:
-  # image: docker.io/nashsu/free_ask_internet:latest
-    image: oklove/search35
+    image: docker.io/nashsu/free_ask_internet:latest
     depends_on:
       - freegpt35
     restart: on-failure
